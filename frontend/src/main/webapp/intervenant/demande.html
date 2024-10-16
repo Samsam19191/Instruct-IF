@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demande</title>
+    <link rel="stylesheet" href="demande.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <dialog id="visio-dialog">
+      <div class="container">
+        <div class="header">
+          <h1>Visio</h1>
+        </div>
+        <div class="details-eleve">
+          <h2>Visio avec : <span id="studentFullName">[NOM] [Prénom]</span></h2>
+        </div>
+        <div class="image-container">
+          <img id="visio-img" src="../images/visio.png" alt="Image" />
+        </div>
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn"
+            id="end-visio-button"
+            onclick="endVisio()"
+          >
+            Quitter la visio
+          </button>
+        </div>
+        <div class="form-group">
+          <textarea
+            id="bilan"
+            placeholder="Écrivez le bilan ici sur plusieurs lignes si besoin"
+            oninput="checkBilan()"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button
+            type="button"
+            class="btn secondary"
+            id="send-button"
+            onclick="sendBilan()"
+            disabled
+          >
+            Envoyer le bilan
+          </button>
+        </div>
+      </div>
+    </dialog>
+    <div class="navbar">
+      <a href="demande.html">
+        <button type="button" class="nav-button active">
+          Demande de cours
+        </button>
+      </a>
+      <a href="history.html">
+        <button type="button" class="nav-button">Historique</button>
+      </a>
+      <a href="stats.html">
+        <button type="button" class="nav-button">Statistiques</button>
+      </a>
+      <a href="profile.html">
+        <button type="button" class="nav-button">Profil</button>
+      </a>
+      <button type="button" class="nav-button" onclick="logout()">
+        Déconnexion
+      </button>
+    </div>
+    <div class="content" id="content-div">
+      <!-- inserer details de la demande s'il y en a une, "aucune demande en cours sinon" -->
+    </div>
+  </body>
+  <script src="demand.js"></script>
+</html>

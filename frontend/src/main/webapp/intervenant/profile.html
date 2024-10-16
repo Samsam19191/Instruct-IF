@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="demande.html">
+        <button type="button" class="nav-button">Demande de cours</button>
+      </a>
+      <a href="history.html">
+        <button type="button" class="nav-button">Historique</button>
+      </a>
+      <a href="stats.html">
+        <button type="button" class="nav-button">Statistiques</button>
+      </a>
+      <a href="profile.html">
+        <button type="button" class="nav-button active">Profil</button>
+      </a>
+      <button type="button" class="nav-button" onclick="logout()">
+        Déconnexion
+      </button>
+    </div>
+    <h1>Profil :</h1>
+    <div class="content" id="content-div">
+      <!-- Les détails seront insérées ici -->
+    </div>
+  </body>
+  <script src="profile.js"></script>
+</html>

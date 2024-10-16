@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion élève</title>
+  <link rel="stylesheet" href="login.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Connexion élève</h1>
+      <a href="../index.html"> <button type="button" class="retour">Retour</button></a>
+    </div>
+    <div class="form-group">
+      <label for="champ-mail">Adresse mail</label>
+      <input id="champ-mail" type="text" placeholder="ex : dufaut.marc@gmail.com" />
+    </div>
+    <div class="form-group">
+      <label for="champ-password">Mot de passe</label>
+      <input id="champ-password" type="password" placeholder="********" />
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn" onclick="login()">Me connecter</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>
